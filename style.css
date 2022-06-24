@@ -20,12 +20,12 @@ body {
 .navbar-container{
   display: flex;
   align-items: center;
-  background-color: blanchedalmond;
+  background-color: rgb(200, 147, 72);
   padding: 0 50px;
 }
 .logo-container{
   flex: 0;
-  background-color: #C98231;
+  
   align-items: center;
 }
 .logo{
@@ -79,7 +79,7 @@ body {
 .sidebar{
   width: 50px;
   height: 100%;
-  background-color: blanchedalmond;
+  background-color: rgb(200, 147, 72);
   position: fixed;
   top: 0;
   display: flex;
@@ -100,16 +100,42 @@ body {
 .homepage{
   height: 50vh;
   align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+}
+.buyticket{
+  background-color: rgb(73, 69, 207);
+ font-family: Oswald, sans-serif;
+ font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
 }
 
 .purchase-ticket{
   
 }
-.quotes{
-  
-  
-}
+
 
 .movie-container {
   
@@ -131,7 +157,7 @@ body {
 
 .purchase-ticket{
   font-family: "Fascinate", sans-serif;
-  color: black;
+  color: rgb(161, 93, 14);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +212,7 @@ body {
   background: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
   border-radius: 5px;
-  color: #C98231;
+  color: #172f97;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
