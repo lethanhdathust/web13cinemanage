@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Thu vien cho carousel  -->
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.theme.default.min.css"> 
+    <!-- ---  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>G13</title>
+
+<link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+<!-- navbar  -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"> 
+              <h1 class="logo">G13x </h1>
+            </div>
+            <div class="menu-container"> 
+              <ul class="menu-list">
+                <li class="menu-list-item active">Home</li>
+                <li class="menu-list-item">News</li>
+                <li class="menu-list-item">Movies</li>
+                <li class="menu-list-item">Ticket</li>
+             
+              </ul>  
+            </div>
+            <div class="profile-container">  
+              <img class="profile-picture" src="s1mmy.jpg" alt="Your profile"> 
+            <div class="profile-text-container">  
+              <span class="profile-text">Sign In</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            </div>
+            </div>
+        </div>
+<!-- slide bar  -->
+        <div class="sidebar">
+         <div class="blankspace"> </div>
+          <i class="left-menu-icon fas fa-home"></i>  
+          <i class="left-menu-icon fas fa-search"></i>
+        </div>
+
+    </div>
+<!-- page container  -->
+    <div class="pagecontainer">
+      
+
+      <div class="homepage"style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), #151515), url('basicbackground.jpg');">
+          
+        <button class="buyticket">Purchase</button>       
+      </div>
+
+      <!-- *carousel  -->
+      <div class="caro">
+        <div class="owl-carousel owl-theme">
+         <div class="item"><img src="https://files.betacorp.vn/files/ecm/2022/06/27/1702x621-171013-270622-69.jpg" alt=""></div>
+         <div class="item"><img src="https://files.betacorp.vn/files/ecm/2022/06/27/1702x621-171013-270622-69.jpg" alt=""></div>
+         <div class="item"><img src="https://files.betacorp.vn/files/ecm/2022/06/27/1702x621-171013-270622-69.jpg" alt=""></div>
+       </div>
+       </div>
+       
+<!-- ------  -->
+
+      <div class="purchase-ticket"> 
+        <div class="movie-container">
+          <label> Select a movie:</label>
+          <select id="movie">
+            <option value="50">MichealKenKo</option>
+            <option value="50">Donchee </option>
+            <option value="50">THC Farm </option>
+            <option value="40">D3mon666 </option>
+          </select>
+        </div>
+    
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>Available</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat sold"></div>
+            <small>Unavailable</small>
+          </li>
+        </ul>
+        <div class="container">
+          <div class="screen"></div>
+    
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+    
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+    
+        <p class="text">
+          You have selected <span id="count">0</span> seat for a price of <span
+            id="total"
+            >0</span
+          >
+        </p>
+        <script src="script.js"></script>
+        
+      </div>
+        
+    </div>
+
+
+    <!-- *js cho carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./owl.carousel.min.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+<!-- ------  -->
+  </body>
+</html>

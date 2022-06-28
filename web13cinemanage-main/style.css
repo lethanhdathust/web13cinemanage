@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #3a5378;
+  
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(61, 56, 112);
+    height: 100%;
+}
+.navbar-container{
+  display: flex;
+  align-items: center;
+  background-color: rgb(200, 147, 72);
+  padding: 0 50px;
+}
+.logo-container{
+  flex: 0;
+  
+  align-items: center;
+}
+.logo{
+  font-family: "Rubik Moonrocks", cursive;
+  font-size: 35px;
+  color: rgb(168, 95, 202);
+  align-items: center;
+  justify-content: center;
+}
+.menu-container{
+  
+  flex: 6;
+}
+
+.menu-list{
+  color: plum;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  list-style: none;
+
+} 
+
+.menu-list-item.active{
+  font-weight: bold;
+}
+
+.menu-list-item{
+  margin-right: 30px;
+}
+
+.profile-container{
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-text-container{
+  margin: 0 20px;
+}
+
+.profile-picture{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.sidebar{
+  width: 50px;
+  height: 200px;
+  background-color: rgb(200, 147, 72);
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  align-items: center;
+  
+}
+
+.left-menu-icon{
+  color: plum;
+  font-size: 25px;
+  margin-bottom: 30px;
+  
+
+}
+
+.homepage{
+  height: 50vh;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.buyticket{
+  background-color: rgb(73, 69, 207);
+ font-family: Oswald, sans-serif;
+ font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+
+.purchase-ticket{
+  margin-bottom: 20px;
+}
+
+
+/* .pagecontainer{
+  background-color: #588ACD;
+  margin-bottom: 30px;
+} */
+
+.movie-container {
+  
+  margin: 20px 0;
+}
+
+.movie-container select {
+  
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.purchase-ticket{
+  font-family: "Fascinate", sans-serif;
+  color: rgb(161, 93, 14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #fff;
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: green;
+}
+
+.seat.sold {
+  background-color: red;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  font-family: "Fascinate", sans-serif;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #172f97;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #656361;
+  height: 120px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(158, 248, 158);
+} 
+/* Carousel  */
+
+.caro{
+   margin-bottom:50px;
+
+}
+.caro img{
+  border-radius: 20px;
+
+}
